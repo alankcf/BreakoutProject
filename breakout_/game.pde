@@ -43,8 +43,8 @@ void game() {
   // limits to paddle
   if (mouseX + 50 > width - (paddld/2)) {
     mouseX = width - 55;
-  } else if (mouseX - 50 < paddld/2) {
-    mouseX = 0 + 50;
+  } else if (mouseX < paddld/2) {
+    mouseX = 0 + 55;
   }
 
   // collusion code
